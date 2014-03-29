@@ -13,7 +13,7 @@ if (!$category) {
 	exit("wrong_cat");
 }
 
-$articles = $category->articles()->find_many();
+$articles = $category->articles()->order_by_desc('art_publish_date')->find_many();
 
 $result = array();
 foreach ($articles as $article) {
