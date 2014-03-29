@@ -49,7 +49,7 @@ if ($user->usr_password !== $typed_password) {
 	exit("wrong_password");
 }
 
-$usr_last_login = date("d-m-y H:i:s");
+$usr_last_login = date("Y-m-d H:i:s");
 $user->usr_last_login = $usr_last_login;
 $user->save();
 

@@ -81,7 +81,7 @@ function add_contents($db_tables) {
 		$csv_path = get_path($table);
 		$contents = explode_csv($csv_path);
 		array_push($all_tables, $contents);
-		
+
 		$num_lines = count($contents);
 		$model = Model::factory($model);
 		$header = $contents[0];
@@ -92,7 +92,7 @@ function add_contents($db_tables) {
 			for ($j = 0; $j < $num_cols; $j++) {
 				$db_entry[$header[$j]] = $contents[$i][$j];
 			}
-			
+
 			$model->create($db_entry);
 			$model->save();
 		}

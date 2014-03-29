@@ -56,13 +56,13 @@ if ($user) {
 /* Store the user information in database */
 $usr_salt = generateRandomString();
 $usr_password = sha1($_POST['password'].$usr_salt);
-$usr_last_login = date("d-m-y H:i:s", 0);
+$usr_last_login = "0000-00-00 00:00:00";
 
 $user = Model::factory('User')->create();
 $user->usr_username = $_POST['username'];
 $user->usr_password = $usr_password;
 $user->usr_salt = $usr_salt;
-$user->usr_register_date = date("d-m-y H:i:s");
+$user->usr_register_date = date("Y-m-d H:i:s");
 $user->usr_last_login = $usr_last_login;
 $user->save();
 

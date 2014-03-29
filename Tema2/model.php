@@ -8,7 +8,7 @@ Model::$auto_prefix_models = 'Pw';
 
 class PwUser extends Model {
 	public static $_id_column = 'usr_id';
-	
+
 	public function articles() {
 		return $this->has_many('Article', 'art_author');
 	}
@@ -16,7 +16,7 @@ class PwUser extends Model {
 
 class PwCategory extends Model {
 	public static $_id_column = 'cat_id';
-	
+
 	public function articles() {
 		return $this->has_many_through('Article', null,
 				'artc_cat_id', 'artc_art_id');
@@ -30,7 +30,7 @@ class PwArticle extends Model {
 		return $this->has_many_through('Category', null,
 				'artc_art_id', 'artc_cat_id');
 	}
-	
+
 	public function author() {
 		return $this->belongs_to('User', 'art_author');
 	}

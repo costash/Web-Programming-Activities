@@ -17,9 +17,9 @@ $articles = $category->articles()->order_by_desc('art_publish_date')->find_many(
 
 $result = array();
 foreach ($articles as $article) {
-	
+
 	$author = $article->author()->find_one();
-	
+
 	$item = array('id' => $article->art_id,
 		'title' => $article->art_title,
 		'content' => $article->art_content,
