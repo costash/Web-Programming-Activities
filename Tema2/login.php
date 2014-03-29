@@ -36,32 +36,20 @@ if (!isset($_POST['password']) || strlen($_POST['password']) < 6) {
 	exit("password");
 }
 
-if (!isset($_POST['confirm']) || $_POST['confirm'] != $_POST['password']) {
-	exit("confirm");
-}
-
-$errors[] = "";
-if (!checkPassword($_POST['password'], $errors)) {
-	exit("password_strength");
-}
-
 $user = Model::factory('User')
 	->where('usr_username', $_POST['username'])
 	->find_one();
 
-if ($user) {
-	exit("user_exists");
+if (!$user) {
+	exit("user_doesnt_exist");
 }
 
-$usr_salt = generateRandomString();
-$usr_password = sha1($_POST['password'].$usr_salt);
-$usr_last_login = date("d-m-y H:i:s", 0);
+$typed_password = sha1($_POST['password'].$user->usr_salt);
+if ($user->usr_password !== $typed_password) {
+	exit("wrong_password");
+}
 
-$user = Model::factory('User')->create();
-$user->usr_username = $_POST['username'];
-$user->usr_password = $usr_password;
-$user->usr_salt = $usr_salt;
-$user->usr_register_date = date("d-m-y H:i:s");
+$usr_last_login = date("d-m-y H:i:s");
 $user->usr_last_login = $usr_last_login;
 $user->save();
 
