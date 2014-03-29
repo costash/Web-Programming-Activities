@@ -1,29 +1,33 @@
 <?php
+/*
+ * Author: Constantin Șerban-Rădoi 342C5
+ * March 2014
+ */
 require_once 'model.php';
 
+/* Check parameters */
 if (!isset($_POST['id']) || !is_numeric($_POST['id'])) {
 	exit("id");
 }
 
-if (!isset($_POST['title']) || empty($_POST['title'])) {
-	exit("title");
+function check_valid($param) {
+	if (!isset($_POST["$param"]) || empty($_POST[$param])) {
+		exit("$param");
+	}
 }
 
-if (!isset($_POST['content']) || empty($_POST['content'])) {
-	exit("content");
-}
+check_valid('title');
+check_valid('content');
+check_valid('author');
+check_valid('cat_id');
 
-if (!isset($_POST['author']) || empty($_POST['author'])) {
-	exit("author");
-}
+$new_cats = $_POST['cat_id'];
 
-if (!isset($_POST['cat_id']) || empty($_POST['cat_id'])) {
-	exit("cat_id");
-}
-
-/* Find categories in database. Could not use in_array here. */
+/* Find categories in database and check if the new ones are valid.
+ * Could not use in_array function here.
+ */
 $categories = Model::factory('Category')->find_many();
-foreach ($_POST['cat_id'] as $entered_category) {
+foreach ($new_cats as $entered_category) {
 	$found = false;
 	foreach ($categories as $category) {
 		if ($entered_category === $category->cat_id) {
@@ -36,27 +40,31 @@ foreach ($_POST['cat_id'] as $entered_category) {
 	}
 }
 
+/* Get the corresponding article and modify its contents. */
 $article = Model::factory('Article')
 		->where('art_id', $_POST['id'])
 		->find_one();
-
-Model::factory('ArticleCategory')
-		->where('artc_art_id', $article->art_id)
-		->delete_many();
-
-$art_cat = Model::factory('ArticleCategory');
-foreach ($_POST['cat_id'] as $cat_id) {
-	$art_cat->create();
-	$art_cat->artc_art_id = $article->art_id;
-	$art_cat->artc_cat_id = $cat_id;
-	$art_cat->save();
-}
 
 $article->art_title = $_POST['title'];
 $article->art_content = $_POST['content'];
 $article->art_author = $_POST['author'];
 $article->art_update_date = date("Y-m-d H:i:s");
 $article->save();
+
+/* Remove the old assigned categories */
+Model::factory('ArticleCategory')
+		->where('artc_art_id', $article->art_id)
+		->delete_many();
+
+/* Set the new categories */
+$art_cat = Model::factory('ArticleCategory');
+foreach ($new_cats as $cat_id) {
+	$art_cat->create();
+	$art_cat->artc_art_id = $article->art_id;
+	$art_cat->artc_cat_id = $cat_id;
+	$art_cat->save();
+}
+
 
 echo 'ok';
 

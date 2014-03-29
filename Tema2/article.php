@@ -1,6 +1,11 @@
 <?php
+/*
+ * Author: Constantin Șerban-Rădoi 342C5
+ * March 2014
+ */
 require_once 'model.php';
 
+/* Check parameter. */
 if (!isset($_GET['art_id']) || !is_numeric($_GET['art_id'])) {
 	exit("wrong_art");
 }
@@ -15,6 +20,7 @@ if (!$article) {
 
 $author = $article->author()->find_one();
 
+/* Create the output JSON. */
 $result = array('id' => $article->art_id,
 		'title' => $article->art_title,
 		'content' => $article->art_content,
@@ -25,6 +31,7 @@ $result = array('id' => $article->art_id,
 
 echo json_encode($result);
 
+/* Update number of views. */
 $article->art_views++;
 $article->save();
 

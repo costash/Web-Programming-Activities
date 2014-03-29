@@ -1,4 +1,8 @@
 <?php
+/*
+ * Author: Constantin Șerban-Rădoi 342C5
+ * March 2014
+ */
 require_once 'idiorm.php';
 require_once 'model.php';
 

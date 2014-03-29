@@ -1,6 +1,11 @@
 <?php
+/*
+ * Author: Constantin Șerban-Rădoi 342C5
+ * March 2014
+ */
 require_once 'model.php';
 
+/* Check parameter. */
 if (!isset($_GET['cat_id']) || !is_numeric($_GET['cat_id'])) {
 	exit("wrong_cat");
 }
@@ -15,6 +20,7 @@ if (!$category) {
 
 $articles = $category->articles()->order_by_desc('art_publish_date')->find_many();
 
+/* Create the output JSON. */
 $result = array();
 foreach ($articles as $article) {
 

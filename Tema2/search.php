@@ -1,18 +1,28 @@
 <?php
+/*
+ * Author: Constantin Șerban-Rădoi 342C5
+ * March 2014
+ */
 require_once 'model.php';
 
+/* Check parameter */
 if (!isset($_GET['s']) || empty($_GET['s'])) {
 	exit("s");
 }
 
+/* Make sure LIKE is case sensitive */
 ORM::get_db()->exec('PRAGMA case_sensitive_like = true;');
 
+/* Search the term through titles and through contents. The raw where is needed
+ * because idiorm does not support OR for WHERE clauses.
+ */
 $like = '%'.$_GET['s'].'%';
 $articles = Model::factory('Article')
 		->where_raw('(`art_title` LIKE ? OR `art_content` LIKE ?)', array($like, $like))
 		->order_by_desc('art_publish_date')
 		->find_many();
 
+/* Create the output JSON. */
 $result = array();
 foreach ($articles as $article) {
 
