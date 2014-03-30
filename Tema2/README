@@ -1,0 +1,33 @@
+﻿*** Tema 2 PW ***
+*** Constantin Șerban-Rădoi ***
+*** Martie 2014 ***
+
+** Tema este implementată CU BONUS **
+
+** Structura fișierelor **
+
+Arhiva temei conține următoarele fișiere:
+	* README - acest fișier
+	* generate.php - script pentru generarea bazei de date
+	* model.php - script ce definește modelul bazei de date pentru ORM
+	* idiorm.php - ORM-ul de bază
+	* paris.php - un idiorm pe steroizi
+	* *.php - cele 7 fișiere cerute în enunț
+	* db/db.sqlite - fișierul cu baza de date
+	* db/*.csv - cele 4 fișiere cu tabelele inițiale
+
+** Rulare **
+
+Pentru crearea bazei de date, a tabelelor și popularea cu date se rulează
+script-ul
+	generate.php
+
+Fișierul db/db.sqlite *trebuie* să existe, altfel scriptul va eșua.
+
+** Detalii **
+
+Am decis să folosesc pe lângă idiorm și un wrapper ceva mai bogat, anume Paris,
+care oferă o mai bună abstractizare pentru asocierile dintre tabele. În ceea ce
+privește baza de date, am folosit SQLite, căci nu avea sens să complic existența
+nici a mea, nici a celui care testează cu alte tipuri de baze de date gen Oracle
+sau MySQL.
