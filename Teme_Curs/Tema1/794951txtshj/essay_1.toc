@@ -1,0 +1,7 @@
+\select@language {romanian}
+\contentsline {section}{\numberline {1}Introducere}{2}{section.1}
+\contentsline {section}{\numberline {2}Elemente noi aduse de HTML5 \IeC {{\textcommabelow s}}i CSS3}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Elemente noi \IeC {\^\i }n HTML5}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Elemente noi \IeC {\^\i }n CSS3}{3}{subsection.2.2}
+\contentsline {section}{\numberline {3}Standardizare. Cine se ocup\IeC {\u a}?}{3}{section.3}
+\contentsline {section}{\numberline {4}Concluzie}{4}{section.4}

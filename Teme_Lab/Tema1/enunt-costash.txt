@@ -1,0 +1,240 @@
+Pagina Principala: 
+Acest element va avea urmatoarele proprietati:
+Numele fisierului HTML: index.html
+Titlul paginii : ggXMascNlHthtJlvfVFtRLssa
+Meta Keywords : XiDFxszicaqHbvueHgZX, hPQNfWMdqZ
+si urmatoarele subelemente: 
+	Meniu de navigare (nav): 
+	Acest element va avea urmatoarele proprietati:
+	ID : fJpqMKsfXT
+	si urmatoarele subelemente: 
+		Link (a): 
+		Acest element va avea urmatoarele proprietati:
+		Pagina catre care pointeaza link-ul : index.html
+		Text link : cvlyxacysgkunicwjyyp
+
+		Link (a): 
+		Acest element va avea urmatoarele proprietati:
+		Pagina catre care pointeaza link-ul : login.html
+		Text link : iktwbafiwlfrwlkiintc
+
+		Link (a): 
+		Acest element va avea urmatoarele proprietati:
+		Pagina catre care pointeaza link-ul : register.html
+		Text link : tnwxsvbmqibjlhypkvlz
+
+		Link (a): 
+		Acest element va avea urmatoarele proprietati:
+		Pagina catre care pointeaza link-ul : edit_article.html
+		Text link : pxsrteofngzeyimpodqb
+
+		Link (a): 
+		Acest element va avea urmatoarele proprietati:
+		Pagina catre care pointeaza link-ul : search.html
+		Text link : ajwzvpeohvomhotnzkwn
+
+	div (Articol Text): 
+	Acest element va avea urmatoarele proprietati:
+	ID : swNHCuUnTH
+	si urmatoarele subelemente: 
+		Titlu Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: dMhTjJPJig
+		Titlu: LNFGKPNMFECNKYKHDWPC
+
+		Paragraf text (p): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de cuvinte: 50
+		Trebuie sa contina tag-uri blockquote : false
+		Trebuie sa contina tag-uri cite: true
+		Trebuie sa contina tag-uri super: true
+		Trebuie sa contina tag-uri sub: true
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: PNG
+		Dimensiuni imagine : 411x490
+		Text alternativ: pYvxhoTZBbONefi
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: JPEG
+		Dimensiuni imagine : 123x477
+		Text alternativ: iYRFCTBatyyzgnA
+
+		Tabel (table): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de randuri: 5
+		Numar de coloane: 4
+		Randul in care se afla elementul text: 1
+		Coloana in care se afla elementul text: 1
+		si urmatoarele subelemente: 
+			Paragraf text (p): 
+			Acest element va avea urmatoarele proprietati:
+			Numar de cuvinte: 35
+			Trebuie sa contina tag-uri blockquote : false
+			Trebuie sa contina tag-uri cite: false
+			Trebuie sa contina tag-uri super: false
+			Trebuie sa contina tag-uri sub: false
+
+		Categorie (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : pTfGxDIyWw
+		Categorie: Random
+
+		User (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: DBqvDlUepo
+		Username: vknif@eagjj.ro
+
+		Data Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : RMQBTHXlkR
+		Data : 1974-03-20 18:40:10 +0200
+
+	div (Articol Text): 
+	Acest element va avea urmatoarele proprietati:
+	ID : gJReXhZXhi
+	si urmatoarele subelemente: 
+		Titlu Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: HyLhFybcCl
+		Titlu: PLTXJJZYMTKXZZKLZTJP
+
+		Paragraf text (p): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de cuvinte: 11
+		Trebuie sa contina tag-uri blockquote : true
+		Trebuie sa contina tag-uri cite: false
+		Trebuie sa contina tag-uri super: false
+		Trebuie sa contina tag-uri sub: true
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: GIF
+		Dimensiuni imagine : 291x290
+		Text alternativ: wdxHcNyCntbObQi
+
+		Video (video tag): 
+		Acest element va avea urmatoarele proprietati:
+		Surse video: {:format_video=>"MP4", :dimensiuni=>"640x480"}
+
+		Categorie (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : uSOJAziLXS
+		Categorie: Random
+
+		User (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: ApIAEgPkbP
+		Username: rbkvj@kllmy.ro
+
+		Data Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : BnNTpdztBd
+		Data : 1973-12-07 18:49:16 +0200
+
+	div (Articol Text): 
+	Acest element va avea urmatoarele proprietati:
+	ID : daahyEQPzN
+	si urmatoarele subelemente: 
+		Titlu Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: zmCkYItGbF
+		Titlu: PZZKVETWXEEJMIWOSZNR
+
+		Paragraf text (p): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de cuvinte: 50
+		Trebuie sa contina tag-uri blockquote : true
+		Trebuie sa contina tag-uri cite: true
+		Trebuie sa contina tag-uri super: true
+		Trebuie sa contina tag-uri sub: false
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: GIF
+		Dimensiuni imagine : 321x434
+		Text alternativ: zIoPlsbstdgHZSv
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: PNG
+		Dimensiuni imagine : 402x268
+		Text alternativ: ViizMtnwbysMAIY
+
+		Tabel (table): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de randuri: 3
+		Numar de coloane: 3
+		Randul in care se afla elementul text: 2
+		Coloana in care se afla elementul text: 1
+		si urmatoarele subelemente: 
+			Paragraf text (p): 
+			Acest element va avea urmatoarele proprietati:
+			Numar de cuvinte: 45
+			Trebuie sa contina tag-uri blockquote : false
+			Trebuie sa contina tag-uri cite: true
+			Trebuie sa contina tag-uri super: false
+			Trebuie sa contina tag-uri sub: true
+
+		Categorie (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : mhdgKJhUoF
+		Categorie: Sports
+
+		User (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: TOIpvbxXGd
+		Username: voguu@zjthg.ro
+
+		Data Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : QvOKymyNnx
+		Data : 1974-02-22 17:06:55 +0200
+
+	div (Articol Text): 
+	Acest element va avea urmatoarele proprietati:
+	ID : vQBufcSKWr
+	si urmatoarele subelemente: 
+		Titlu Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: TKhMlmOUwL
+		Titlu: BLVIEQOXMQUPETCQPVHM
+
+		Paragraf text (p): 
+		Acest element va avea urmatoarele proprietati:
+		Numar de cuvinte: 26
+		Trebuie sa contina tag-uri blockquote : false
+		Trebuie sa contina tag-uri cite: false
+		Trebuie sa contina tag-uri super: true
+		Trebuie sa contina tag-uri sub: false
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: GIF
+		Dimensiuni imagine : 252x426
+		Text alternativ: dcFNnJSZBpYntFP
+
+		Imagine (img): 
+		Acest element va avea urmatoarele proprietati:
+		Tipul imaginii: PNG
+		Dimensiuni imagine : 387x143
+		Text alternativ: fuvwuocyWtbfkVK
+
+		Categorie (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : wbfbvGnhTy
+		Categorie: Cars
+
+		User (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID: gxUuDxTFRh
+		Username: uuhnm@uscns.ro
+
+		Data Articol (div): 
+		Acest element va avea urmatoarele proprietati:
+		ID : mduEsCNYQY
+		Data : 1973-12-20 17:21:54 +0200
+
+

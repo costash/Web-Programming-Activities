@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Blog - Titlu articol</title>
+    <meta name="description" content="Un articol de bloc">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Costash">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <article>
+        <time pubtime="2014-02-28"></time>
+
+        <h1>Titlu articol</h1>
+        <p>Conținut articol...</p>
+
+        <form action="" method="post">
+            <fieldset>
+                <select name="aproval">
+                    <option value="value1" selected>Aproval 1</option>
+                    <option value="value2">Aproval 2</option>
+                    <option value="value3">Aproval 3</option>
+                </select>
+
+                <input id="POST-agree-terms" type="checkbox">
+                <label for="POST-agree-terms">I agree the terms of this site</label>
+                <input id="POST-email-subscription" type="checkbox">
+                <label for="POST-email-subscription">Subscribe for receiving emails.</label>
+
+                <label for="POST-comment">Enter Comment here:</label>
+                <textarea id="POST-comment" name="comment" rows="10" cols="50">Write something here</textarea>
+                <input type=submit name="submit-comment" value="Trimite comentaru">
+            </fieldset>
+        </form>
+
+        <section>Comments</section>
+        <article>
+            <address>Gigel a scris</address>
+            <p>This is the comment from Gigel</p>
+        </article>
+        <article>
+            <address>Ionel a scris</address>
+            <p>This is the comment from Ionel</p>
+        </article>
+
+        <footer>
+            <address>Author of this article is Costash.</address>
+        </footer>
+    </article>
+</body>
+
+</html>

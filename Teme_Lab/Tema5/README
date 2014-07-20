@@ -1,0 +1,36 @@
+﻿*** Tema 3 PW ***
+*** Constantin Șerban-Rădoi ***
+*** Mai 2014 ***
+
+** Structura fișierelor **
+
+Arhiva temei conține următoarele fișiere:
+	* README - acest fișier
+	* generate.php - script pentru generarea bazei de date
+	* model.php - script ce definește modelul bazei de date pentru ORM
+	* idiorm.php - ORM-ul de bază
+	* paris.php - un idiorm pe steroizi
+	* index.php - o pagină cu un articol în care se vor încărca/posta comments
+	* comments.php - scriptul care salvează/trimite comments la/de la server
+	* db/db.sqlite - fișierul cu baza de date
+	* css/style.css - un mini-styling
+	* jquery-ui.min.css - nefolosit, dar a rămas pentru posteritate
+	* script/jquery-1.11.1.min.js - jquery
+	* script/jquery-ui.min.js - jquery-ui
+	* script/script.js - scriptul în care se fac request-urile către server
+
+** Rulare **
+
+Pentru crearea bazei de date, a tabelelor și popularea cu date se rulează
+script-ul
+	generate.php
+
+Tema implementează cerința de bază și se rulează accesând index.php de pe
+server.
+
+Fișierul db/db.sqlite *trebuie* să existe, altfel scriptul va eșua.
+
+** Detalii **
+
+Am implementat totul cât mai basic, respectând cerința. Validarea datelor am
+făcut-o doar pe server.

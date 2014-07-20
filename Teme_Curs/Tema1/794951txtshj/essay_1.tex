@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage[margin=2.5cm]{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+% 	Used for romanian characters
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,romanian]{babel}
+
+\usepackage{url} % Required for loading URLs
+\usepackage[hidelinks]{hyperref} % Make clickable references inside doc and bookmarks
+\usepackage[superscript]{cite} % Package for citations with option to make them as superscript
+
+\makeatletter
+\renewcommand\@citess[1]{\textsuperscript{[#1]}} % Re-enable square brackets before and after references
+\makeatother
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\linespread{1.0} % Line spacing
+
+\setlength\parindent{1cm} % Paragraph indentation
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage{pslatex} % Times New Roman font
+
+\usepackage{listings} % Used for code snippets
+\lstset{language=HTML} % Set your language (you can change the language for each code-block optionally)
+
+\usepackage{enumitem} % For enums
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE Universitatea Politehnica București}\\[1.5cm] % Name of your university/college
+\textsc{\Large Facultatea de Automatică și Calculatoare}\\[0.5cm] % Major heading such as course name
+%\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[0.4cm]
+{ \huge \bfseries HTML5 \& CSS - Viitorul Web-ului}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autor:}\\
+Constantin \textsc{Șerban-Rădoi} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Coordonator:} \\
+Dr.Ing. Ciprian \textsc{Dobre} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+\includegraphics[height=100px]{logo-acs-text} % Include a department/university logo - this will require the graphicx package
+\includegraphics[height=100px]{logo-upb}
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introducere} % Major section
+
+Acest eseu își propune să aducă în vedere ce anume aduc nou standardele HTML5~\cite{website:html5} și
+CSS3~\cite{website:css3} și ce înseamnă acestea pentru viitorul Web-ului. În prima parte se va expune o
+parte din elementele ce sunt nou introduse în HTML5~\cite{website:html5} și CSS3~\cite{website:css3} și
+cui sunt acestea adresate, urmând ca în a doua parte să fie cuprinsă o discuție legată de standardizare
+și organizațiile implicate în acest proces.
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Elemente noi aduse de HTML5 și CSS3}
+
+În ultimii ani, HTML5~\cite{website:html5} a devenit din ce în ce mai folosit în majoritatea website-urilor,
+în ciuda faptului că încă nu este finalizat standardul. Același lucru poate fi spus și despre
+CSS3~\cite{website:css3}, care aduce foarte multe noutăți și elemente utile pentru stilizarea paginilor,
+însă nefiind standardizat, multe browsere au ajuns să implementeze în mod diferit sau, mai mult, să nu suporte
+deloc anumite elemente. Aceste îmbunătățiri sunt adresate tuturor autorilor de pagini Web, dar în special
+celor care cunosc deja mecanismele Web-ului. Este de dorit ca adopția HTML5~\cite{website:html5} să fie făcută
+de cât mai mulți utilizatori, pentru a aduce o uniformitate mai bună prin folosirea acestor noi tehnologii.
+
+%------------------------------------------------
+
+\subsection{Elemente noi în HTML5} % Sub-section
+
+În primul rând trebuie menționat ce este HTML5~\cite{website:html5}. Acesta reprezintă ultima evoluție a
+standardului ce definește HTML~\cite{website:html}. Pe de o parte, el reprezintă o nouă versiune a
+\textit{limbajului} HTML~\cite{website:html}, aducând o serie de noi elemente, proprietăți și comportamente,
+iar pe de alta, acesta reprezintă un set mai mare de tehnologii care permit aplicații și site-uri Web.
+
+O contribuție importantă o aduc elementele ce țin de structurarea și împărțirea unei pagini pe secțiuni,
+anume \textbf{\lstinline{<section>}}, \textbf{\lstinline{<article>}}, \textbf{\lstinline{<nav>}},
+\textbf{\lstinline{<header>}}, \textbf{\lstinline{<footer>}} și \textbf{\lstinline{<aside>}}.
+Acestea rezolvă anumite ambiguități pe care le avea versiunea anterioară a standardului
+HTML~\cite{website:html}.
+
+Printre cele mai importante elemente aduse în HTML5~\cite{website:html5} se numără elementele ce țin de
+multimedia, anume \textbf{\lstinline{<audio>}} și \textbf{\lstinline{<video>}} ce permit înglobarea de
+conținut video sau audio și aduc astfel noi posibilități pentru gestionarea conținutului multimedia în
+aplicațiile Web. Înainte pentru astfel de conținut era nevoie de folosirea de conținut
+Flash~\cite{website:flash} sau alte tehnologii similare, care fac parte din standard.
+
+Au fost aduse îmbunătățiri și asupra formularelor introduse cu ajutorul tag-ului \textbf{\lstinline{<form>}}.
+Mai precis s-au adăugat noi valori pentru atributul \textbf{\lstinline{type}} din cadrul tag-ului
+\textbf{\lstinline{<input>}}. Aceste valori sunt: \textbf{\textit{search}}, \textbf{\textit{email}},
+\textbf{\textit{tel}} și \textbf{\textit{url}}. Prin intermediul acestor tipuri se pot introduce mai ușor
+câmpuri de adresă de email, telefon, url sau câmpuri de căutare.
+
+În afară de elementele și atributele mai sus menționate au mai fost adăugate multe alte noi elemente semantice
+precum \textbf{\lstinline{<mark>}}, \textbf{\lstinline{<figure>}}, \textbf{\lstinline{<figcaption>}},
+\textbf{\lstinline{<data>}}, \textbf{\lstinline{<time>}}, \textbf{\lstinline{<output>}},
+\textbf{\lstinline{<progress>}}, sau \textbf{\lstinline{<meter>}} și \textbf{\lstinline{<main>}}, sporind
+numărul elementelor HTML5~\cite{website:html5} valide.
+
+În ceea ce privește tehnologiile de comunicare, WebSockets~\cite{website:websockets} au avut o contribuție
+extrem de importantă permițând mult mai ușor menținerea unor sesiuni de comunicație dintre browser și un
+server. Tot aici ar fi de menționat și WebRTC~\cite{website:webrtc}, care este un standard de comunicație în
+timp real.
+
+O altă îmbunătățire majoră a fost adusă la partea de grafică 2D și 3D prin introducerea tag-ului
+\textbf{\lstinline{<canvas>}} și a bibliotecii grafice WebGL~\cite{website:webgl} ce permit randarea de
+elemente grafice 2D și 3D direct într-un browser compatibil, fără a fi nevoie de alte tehnologii intermediare.
+
+%------------------------------------------------
+
+\subsection{Elemente noi în CSS3} % Sub-section
+
+CSS~\cite{website:css} a fost extins pentru a putea stiliza elementele într-un mod mult mai complex decât se
+putea realiza până acum. Acest lucru este de regulă referit ca CSS3~\cite{website:css3}, deși
+CSS~\cite{website:css} nu mai este reprezentat de o specificație monolitică, iar diferite module nu se află
+la același nivel 3, spre exemplu unele se află la primul, în vreme ce altele se afla la al patrulea nivel,
+toate celelalte nivele fiind folosite.
+
+Au fost adăugate noi metode de stilizare a fundalului, de exemplu prin utilizarea umbrelor în cadre, folosind
+\textbf{\textit{\lstinline{box-shadow}}} și de asemenea pot fi setate mai multe fundaluri.
+
+De asemenea, au fost aduse contribuții marginilor, acum putând folosi imagini pentru a stiliza marginile,
+folosind \textbf{\textit{\lstinline{border-image}}} și proprietățile asociate acestuia, iar marginile
+rotunjite sunt suportate prin intermediul proprietății \textbf{\textit{\lstinline{border-radius}}}.
+
+De departe cea mai importantă contribuție adusă în CSS3~\cite{website:css3} au fost Tranzițiile
+~\cite{website:transitions} și Animațiile CSS~\cite{website:animations} prin intermediul cărora se pot crea
+mult mai ușor efecte complexe ce pot îmbogăți experiența utilizatorilor pe site-urile unde sunt folosite.
+
+Pe lângă aceste elemente au fost aduse îmbunătățiri și în domeniul tipografic, autorii site-urilor putând
+controla împărțirea cuvintelor în silabe și a modului în care textul este așezat pe rânduri. Mai mult,
+acum se pot adăuga umbre și se pot controla mai ușor decorațiunile asupra textului.
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Standardizare. Cine se ocupă?} % Major section
+
+Pentru a se încerca să existe o sintaxă uniformă pentru toate browserele există un efort de standardizare
+a acestor tehnologii, de care se ocupă HTML Working Group~\cite{website:htmlwg}, un grup de persoane cu
+expertiză în domeniul web. Lista de membri din acest grup~\cite{website:htmlwgmembers} cuprinde experți
+din cadrul mai multor organizații, cea mai importantă fiind W3C~\cite{website:w3c}. Alte organizații cu un
+număr semnificativ de membri, în ordine alfabetică, sunt:
+
+\begin{itemize}[nosep] % No vertical spacing
+	\item Adobe Systems, Inc.~\cite{website:adobeinc}
+    \item Apple, Inc.~\cite{website:appleinc}
+	\item Baidu, Inc.~\cite{website:baiduinc}
+	\item Google, Inc.~\cite{website:googleinc}
+	\item Microsoft Corporation~\cite{website:microsoft}
+	\item Mozilla Foundation~\cite{website:mozilla}
+\end{itemize}
+
+În Decembrie 2012 a fost realizată specificația Candidate Recommendation pentru standardul
+HTML5~\cite{website:html5cr} de către W3C, urmând ca ulterior să se stabilizeze. Planul pentru anul 2014
+pentru standardizarea HTML5~\cite{website:html5-2014-plan} își propune ca la sfârșitul Q4 să fie
+publicată versiunea finală a standardului. Mai mult, tot la sfârșitul Q4 se dorește realizarea unei
+specificații Candidate Recommendation pentru versiunea ulterioară, HTML5.1~\cite{website:html5.1-milestones},
+care se dorește a îngloba tot ceea ce oferă deja standardul HTML5~\cite{website:html5}, alături de alte
+elemente care nu erau încă suficient de stabile pentru a fi incluse în standard și eventuale amendamente
+și rezolvări ale bug-urilor existente.
+
+Suportul pentru HTML5~\cite{website:html5} în browserele existente~\cite{website:html5-support} a început
+să ajungă la un nivel destul de bun, Chrome și Firefox situându-se cel mai bine la numărul de feature-uri
+implementate. Internet Explorer (versiunea 11), deși este fundaș, suportă deja un număr semnificativ de
+elemente. Rămâne de văzut care va fi situația la sfârșitul acestui an, după ce se stabilește standardul în
+forma sa finală.
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\section{Concluzie} % Major section
+
+Web-ul pare să se îndrepte într-o direcție interesantă prin intermediul introducerii noilor tehnologii.
+Este un lucru bun că se încearcă standardizarea acestora, deoarece momentan există diverse inconsistențe
+între implementările din diverse motoare de browsere (Webkit versus Geko versus Trident). Existența acestor
+inconsistențe îngreunează munca dezvoltatorilor Web, deoarece aceștia trebuie să considere diferite
+implementări specifice pentru fiecare motor în parte. În momentul definitivării standardului, acest lucru
+se va diminua treptat, pe măsură ce vor fi implementate toate specificațiile conform cu standardul în
+toate browserele. O altă problemă comună este cea de backwards compatibility, în special pentru browsere
+precum cele din gama Internet Explorer 8 sau mai vechi, deoarece acestea nu suportau nici măcar vechiul
+standard așa cum ar fi trebuit, și acest lucru a dus la provocarea coșmarurilor pentru dezvoltatori.
+
+În ceea ce privește utilitatea adusă de noile tehnologii, aș putea spune că este una extrem de importantă,
+creând noi modalități de a arăta informația și de a interacționa cu ea, și, mai mult, se pare că s-a creat
+un trend prin care se face o trecere dinspre aplicații desktop către domeniul Web, pentru toate platformele.
+Mai mult, trendul mobilității contribuie la acest lucru prin dorința de a avea o experiență adecvată pe
+cât mai multe dispozitive în momentul folosirii aplicațiilor web atât pe dispozitive mobile, cu ecran redus,
+cât și pe desktop-uri sau tablete, la care există un ecran mare.
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\newpage % Begin Bibliography on a new page
+
+\bibliography{bibliography}{}
+\bibliographystyle{plain}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

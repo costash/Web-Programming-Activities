@@ -1,0 +1,13 @@
+input, textarea {
+	display: block;
+}
+
+#comments > article {
+	border: #677 dashed;
+	margin: 4px auto;
+	padding: 2px 2px;
+}
+
+#comments > article > * {
+	padding: 0 3px;
+}
